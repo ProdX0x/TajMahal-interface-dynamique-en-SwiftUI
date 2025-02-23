@@ -7,112 +7,131 @@
 
 import SwiftUI
 //********* Page d'acceuil avec couleur ********
+
 // Page d'accueil
 struct WelcomeView: View {
     var body: some View {
         NavigationStack {
-            VStack {
-                //Image restaurant
-                Image("TajMahal")
-                    .resizable()
-                    .scaledToFit()
-                    .padding()
-               
-                //Texte information restaurant
-                HStack() {
-                    VStack(alignment: .leading) {
-                        Text("Restaurant Indien")
-                            .font(.caption)
-        
-                        Text("Taj Mahal")
-                            .font(.title)
-                          //  .fontWeight(.bold)
-                            .bold()
-                    }
-                    .background(Color.yellow)  //Couleur 🟡Jaune VStack Information restautant
-                    
-                    Spacer()
-                    
-                    VStack(alignment: .leading, spacing: 100) {
-                        Image("Logo")
-                            .resizable()
-                            .scaledToFit()
-                            .padding()
-                            .frame(width: 80, height: 80)
-                            //La couleur du Logo ne change pas
-                            //.foregroundColor(.black)
-                    }
-                    .background(Color.yellow) // Couleur 🟡Jaune du Logo
-                    
-                }.padding(-5)
-                
-                .background(Color.blue) // Couleur 🔵Bleu de la Vstack
-            }
-            .background(Color.red)  //Couleur 🔴Rouge arriere plan
-            Spacer()
-
-                Text("Restaurant Indien")
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .padding()
-            }
-        VStack {
-            HStack{
-                Text("Mardi")
-                    .font(.caption)
-                Text("18:00 - 22:00")
-                    .font(.caption)
-            }
             
-        }
-//        Spacer()
-        .padding(19)
-        .background(Color.yellow)
-                  
-        
+            //Image de presentation
+            Image("TajMahal")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.horizontal, 20)
+            
+            // Nom du restaurant
+            HStack {
+                VStackLayout(alignment: .leading){
+                    Text("Restaurant indian")
+                        .foregroundColor(Color("CustomGray"))
+                    Text("Taj Mahal")
+                        .font(.title)
+                        .fontWeight(.bold)
+                       
+                }
+                Spacer()
+                
+                // logo du restaurant
+                Image("Logo")
+                    .resizable()
+                    .renderingMode(.template)
+                //.aspectRatio(contentMode: .fit)
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(Color("CustomGray")) // Couleur grise pour le logo
+            }
+            .padding(.horizontal, 20)
+            .padding(.bottom, 20)
+            // .background(Color.yellow.opacity(0.9))
+            
+            //Informations et Coordonnées du restaurant
+            HStack {
+                Image(systemName: "clock")
+                    .foregroundColor(Color("CustomGray"))
+                Text("Mardi")
+                    .foregroundColor(Color("CustomGray"))
+                Spacer()
+                Text("11h30 – 14h30  |  18h30 – 22h00")
+                    .font(.subheadline)
+                    .foregroundColor(Color("CustomGray"))
+                
+            }
+            .padding(.horizontal, 10)
+            .padding(.bottom, 10)
+            
+            HStack {
+                Image(systemName: "fork.knife")
+                    .foregroundColor(Color("CustomGray"))
+                Text("Type de Service")
+                    .font(.subheadline)
+                    .foregroundColor(Color("CustomGray"))
+                Spacer()
+                Text("À emporter")
+                    .font(.subheadline)
+                    .foregroundColor(Color("CustomGray"))
+            }
+            .padding(.horizontal, 10)
+            .padding(.bottom, 10)
+            
+            //.background(Color.black.opacity(0.2))
+            
+            HStack {
+                Image(systemName: "mappin.circle")
+                Text("12  Avenue de la Brique - 75010 Paris")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                Spacer()
+            }
+            .padding(.horizontal, 10)
+            .padding(.bottom, 10)
+            // .background(Color.yellow.opacity(0.9))
+            
+            
+            HStack {
+                Image(systemName: "globe")
+                Text("www.tajmahal.fr")
+                    .font(.subheadline)
+                
+                Spacer()
+            }
+            .padding(.horizontal, 10)
+            .padding(.bottom, 10)
+            
+            HStack {
+                Image(systemName: "phone")
+                    .foregroundColor(Color("CustomGray"))
+                Text("06 123 456 78")
+                    .font(.subheadline)
+                    .foregroundColor(Color("CustomGray"))
+                Spacer()
+            }
+            .padding(.horizontal, 10)
+            .padding(.bottom, 10)
+            //.background(Color.yellow.opacity(0.9))
+            
+            Spacer()
+            
+            // Bouton "Accéder au menu"
             NavigationLink {
                 MenuView()
             } label : {
-                Text("Acceder au Menu")
-                    .font(.title2)
-                 .background(Color.customRed)
+                Text("Accéder au menu")
                     .foregroundColor(.white)
-                    .cornerRadius(6)
+                    .fontWeight(.bold)
+                // .background(Color.customRed.opacity(0.9))
             }
-        } 
+            .frame(minWidth: 350, minHeight: 40, alignment: .center)
+            .background(Color.customRed)
+            .cornerRadius(10)
+            .padding([.top, .horizontal], 20)
+        }
     }
+}
 
+// 🖥️ Aperçu en temps réel
 #Preview {
     WelcomeView()
 }
 
-
-//Page d'acceuil
-
-//struct WelcomeView: View {
-//    var body: some View {
-//        NavigationView {
-//            Image("TajMahal")
-//            Spacer()
-//               VStack {
-//                Text("Restaurant Indien")
-//                    .font(.caption)
-//                    .padding()
-//            }
-//
-//
-//            NavigationLink {
-//                          MenuView()
-//                      } label : {
-//                          Text("Acceder au Menu")
-//                             .font(.title2)
-//                              .background(Color.customRed)
-//                              .foregroundColor(.white)
-//                              .cornerRadius(6)
-//                      }
-//                }
-//        }
-//    }
 
 
 
