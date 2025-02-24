@@ -2,7 +2,7 @@
 //  TajMahalApp.swift
 //  TajMahal
 //
-//  Created by Amandine Cousin on 31/10/2023.
+//  Créé par Amandine Cousin
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct TajMahalApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            WelcomeView() // La vue d'accueil est affichée au lancement de l'application
         }
     }
 }

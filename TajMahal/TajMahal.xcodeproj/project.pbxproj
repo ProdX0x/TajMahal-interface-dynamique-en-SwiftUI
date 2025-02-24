@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141C60E52D6B680500866952 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C60E42D6B680500866952 /* DishView.swift */; };
+		141C61182D6B8E4C00866952 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C61172D6B8E4C00866952 /* MenuRowView.swift */; };
+		141C611A2D6B8E9D00866952 /* SpicerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C61192D6B8E9D00866952 /* SpicerView.swift */; };
 		147A6BB52D6930260096A5F2 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A6BB42D6930260096A5F2 /* DetailsView.swift */; };
 		428D2B512AFA851900BBA4F5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B502AFA851900BBA4F5 /* Model.swift */; };
 		428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B522AFA882700BBA4F5 /* ViewModel.swift */; };
@@ -19,7 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		141C60E42D6B680500866952 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
+		141C61172D6B8E4C00866952 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
+		141C61192D6B8E9D00866952 /* SpicerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicerView.swift; sourceTree = "<group>"; };
 		147A6BB42D6930260096A5F2 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		428D2B502AFA851900BBA4F5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		428D2B522AFA882700BBA4F5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -69,7 +71,6 @@
 				42E9DCB32AF11138007CE7D0 /* Preview Content */,
 				428D2B502AFA851900BBA4F5 /* Model.swift */,
 				428D2B522AFA882700BBA4F5 /* ViewModel.swift */,
-				141C60E42D6B680500866952 /* DishView.swift */,
 			);
 			path = TajMahal;
 			sourceTree = "<group>";
@@ -88,6 +89,8 @@
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
 				147A6BB42D6930260096A5F2 /* DetailsView.swift */,
+				141C61172D6B8E4C00866952 /* MenuRowView.swift */,
+				141C61192D6B8E9D00866952 /* SpicerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,8 +169,9 @@
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
+				141C61182D6B8E4C00866952 /* MenuRowView.swift in Sources */,
+				141C611A2D6B8E9D00866952 /* SpicerView.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
-				141C60E52D6B680500866952 /* DishView.swift in Sources */,
 				147A6BB52D6930260096A5F2 /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
