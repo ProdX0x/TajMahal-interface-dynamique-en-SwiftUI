@@ -25,7 +25,8 @@ struct Dish: Identifiable {
     var spiceLevel: SpiceLevel  // 🔹 Niveau de piment du plat (light, medium, hot)
     var imageName: String       // 🔹 Nom de l'image associée dans les assets
     var price: String           // 🔹 Prix du plat
-    
+
+
     // 🔸 Propriété calculée qui charge l'image depuis les assets en utilisant le nom spécifié
     var image: Image {
         Image(imageName) // 🔹 Charge et retourne l'image correspondante à "imageName"
